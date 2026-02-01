@@ -1,4 +1,6 @@
 #include<iostream>
+int g = 9; // global variable
+
 
 int main(){
     int a = 2;
@@ -22,5 +24,10 @@ int main(){
     //&& --> and ; requires both conditions to be met
     // || --> or ; requires one statement to be met
 
+    //SCOPE --> no need of curly brackets if body in oneline i.e the scope is till there 
+    //curly brackets define that scope for us, are where value is valid
+    int t = 20;
+    if(t == 20)
+        std::cout << "t=20\n";
     return 0;
 }
